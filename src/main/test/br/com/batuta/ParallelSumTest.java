@@ -18,7 +18,7 @@ public class ParallelSumTest {
 			@Override
 			@SuppressWarnings("unchecked")
 			public Produce<Integer> produce() {
-				System.out.println("processando soma 1");
+				System.out.println("sum processing - 1");
 				int parcel = 0;
 				for (int i = 0; i < 1000; i++) parcel += i;
 				return new Produce<Integer>(parcel);
@@ -27,7 +27,7 @@ public class ParallelSumTest {
 			@Override
 			@SuppressWarnings("unchecked")
 			public Produce<Integer> produce() {
-				System.out.println("processando soma 2");
+				System.out.println("sum processing - 2");
 				int parcel = 0;
 				for (int i = 1000; i < 2000; i++) parcel += i;
 				return new Produce<Integer>(parcel);
@@ -36,7 +36,7 @@ public class ParallelSumTest {
 			@Override
 			@SuppressWarnings("unchecked")
 			public Produce<Integer> produce() {
-				System.out.println("processando soma 3");
+				System.out.println("sum processing - 3");
 				int parcel = 0;
 				for (int i = 2000; i < 3000; i++) parcel += i;
 				return new Produce<Integer>(parcel);
